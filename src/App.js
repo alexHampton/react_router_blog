@@ -1,8 +1,6 @@
 import './App.css';
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
 
+import Layout from './Layout';
 import Home from "./Home";
 import NewPost from "./NewPost";
 import PostPage from "./PostPage";
@@ -10,31 +8,27 @@ import About from "./About";
 
 import Missing from "./Missing";
 
-import { Route, Switch, useHistory } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function App() {
+  // change const history to const navigates = useNavigate();
+  // change history.push('/') to navigate('/')
   return (
-    <div className="App">
-      <Header />
-      <Nav />
-      <Switch>
-        <Route exact 
-        path="/">
-          <Home />
-        </Route>
-        <Route exact path="/post">
-          <NewPost />
-        </Route>
-        <Route path="/post/:id">
-          <PostPage />
-        </Route>
-        <Route path="/about" component={About} />
-        <Route path="*" component={Missing} />
-      </Switch>      
-      <Footer />
     
-    </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="post">
+            <Route index element={<NewPost />} />
+            <Route path=":id" element={<PostPage />} />
+          </Route>
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<Missing />} />
+        </Route>      
+      </Routes>      
+      
+    
   );
 }
 
