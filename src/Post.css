@@ -1,0 +1,12 @@
+.Post {
+    border-bottom: solid 1px #ddd;
+}
+
+.Post a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Post .Post-body {
+    margin-bottom: 2.5rem;
+}

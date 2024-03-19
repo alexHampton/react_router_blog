@@ -1,0 +1,9 @@
+.PostPage button {
+    background-color: rgba(255, 0, 0, 0.633);
+    color: #fff;
+    border: 1px solid rgba(2555, 0, 0, 1);
+}
+
+ .PostPage button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}

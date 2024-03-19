@@ -1,3 +1,8 @@
+:root {
+  --main-bg-color: #4bc5c9c2;
+  --accent-bg-color: #2B494D;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
 }

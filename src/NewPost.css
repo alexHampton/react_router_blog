@@ -1,0 +1,34 @@
+.NewPost {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.NewPost-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.NewPost label,.NewPost input,
+.NewPost textarea {
+    margin-bottom: 1rem;
+}
+
+.NewPost input, .NewPost textarea {
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.NewPost textarea {
+    height: 300px;
+}
+
+
+.NewPost button {
+    border: 1px solid #000;
+}
+
+.NewPost button:hover {
+    color: #fff;
+    background-color: #333;
+}
+

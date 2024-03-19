@@ -1,0 +1,6 @@
+.Footer {
+    background-color: var(--main-bg-color);
+    display: grid;
+    place-content: center;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,75 @@
+.Nav {
+    background-color: var(--accent-bg-color);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+    .Nav .Nav-searchForm label {
+        position: absolute;
+        left: -99999px;
+    }
+
+    .Nav .Nav-searchForm input {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .Nav ul {
+        color: #fff;
+        list-style-type: none;
+        display:flex;
+        align-items: center
+    }
+
+        .Nav ul li {
+            padding: 1rem;
+        }
+
+        .Nav ul li:hover,
+        .Nav ul li:focus {
+            padding: 1rem;
+        }
+
+        .Nav li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .Nav ul li:hover,
+        .Nav ul li:focus,
+        .Nav ul li:hover a,
+        .Nav ul li:focus a {
+            background-color: #eee;
+            color: #333;
+        }
+
+        .Nav li:hover a,
+        .Nav li:focus a {
+            cursor: pointer;
+        }
+
+
+        /* .Nav ul li {
+            width: 33.33%;
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            height: 3rem;
+            display: flex;
+            align-items: stretch;
+            justify-content: stretch;
+        }
+
+        .Nav ul li:hover {
+            color: #000;
+            background-color: #fff;
+        }
+
+            */
+
+
+
