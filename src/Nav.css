@@ -8,6 +8,10 @@
     color: #fff;
 }
 
+    .Nav .Nav-searchForm {
+        padding-left: 1rem;
+    }
+
     .Nav .Nav-searchForm label {
         position: absolute;
         left: -99999px;
